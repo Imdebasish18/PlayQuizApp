@@ -10,13 +10,13 @@ body {
   height: 4rem;
   background-color: #020b1a;
   color: white;
-  /* display: block; */
   align-items: center;
   text-align: center;
   position: fixed;
   width: 100%;
   margin: 0;
 }
+
 .logo-1stpart {
   border-radius: 50%;
   background-color: #3679e3;

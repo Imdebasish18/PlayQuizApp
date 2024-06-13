@@ -8,11 +8,22 @@ const { ObjectId } = mongoose.Types;
 dotenv.config({ path: "../.env" });
 
 const {
-  User,
   Question,
   ComputerOrganization,
   ProgrammingUsingC,
+  User,
   DSA,
+  Webdev,
+  OS,
+  Networking,
+  CloudComputing,
+  MachineLearning,
+  Bollywood,
+  Hollywood,
+  Tollywood,
+  India,
+  Europe,
+  USA,
 } = require("../models/user.js");
 
 const express = require("express");
@@ -95,7 +106,22 @@ exports.login = async (req, res) => {
   }
 };
 
-const models = { ComputerOrganization, DSA, ProgrammingUsingC };
+const models = {
+  ComputerOrganization,
+  DSA,
+  ProgrammingUsingC,
+  Webdev,
+  OS,
+  Networking,
+  CloudComputing,
+  MachineLearning,
+  Bollywood,
+  Hollywood,
+  Tollywood,
+  India,
+  Europe,
+  USA,
+};
 
 const fetchRandomDocument = async (modelName) => {
   try {

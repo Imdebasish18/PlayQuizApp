@@ -37,6 +37,17 @@ const ProgrammingUsingC = new mongoose.model(
   questionSchema
 );
 const DSA = new mongoose.model("DSA", questionSchema);
+const Webdev = new mongoose.model("Webdev", questionSchema);
+const OS = new mongoose.model("OS", questionSchema);
+const Networking = new mongoose.model("Networking", questionSchema);
+const CloudComputing = new mongoose.model("CloudComputing", questionSchema);
+const MachineLearning = new mongoose.model("MachineLearning", questionSchema);
+const Bollywood = new mongoose.model("Bollywood", questionSchema);
+const Hollywood = new mongoose.model("Hollywood", questionSchema);
+const Tollywood = new mongoose.model("Tollywood", questionSchema);
+const India = new mongoose.model("India", questionSchema);
+const Europe = new mongoose.model("Europe", questionSchema);
+const USA = new mongoose.model("USA", questionSchema);
 
 const userSchema = mongoose.Schema({
   name: {
@@ -61,4 +72,15 @@ module.exports = {
   ProgrammingUsingC,
   User,
   DSA,
+  Webdev,
+  OS,
+  Networking,
+  CloudComputing,
+  MachineLearning,
+  Bollywood,
+  Hollywood,
+  Tollywood,
+  India,
+  Europe,
+  USA,
 };

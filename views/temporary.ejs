@@ -19,13 +19,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/index.css" />
-
   </head>
   <body>
-    <% let id1="DSA" %>
-    <% let id2="ComputerOrganization" %>
-    <% let id3="ProgrammingUsingC" %>
-
+    <% let id1="DSA" %> <% let id2="ComputerOrganization" %> <% let
+    id3="ProgrammingUsingC" %> <% let id4 = "Webdev" %> <% let id5 = "OS" %>
+    <%let id6 = "Networking" %> <% let id7 = "CloudComputing" %> <% let id8
+    ="MachineLearning" %> <% let id9 = "Bollywood" %> <% let id10 =
+    "Hollywood"%> <% let id11 = "Tollywood" %> <% let id12= "India" %> <% let
+    id13="Europe" %> <% let id14= "USA" %>
 
     <!--Header of the webpage-->
     <div class="header row">
@@ -46,325 +47,350 @@
       </div>
     </div>
 
-      <!--home of The webpage-->
-      <div class="container mb-2" id="home">
-        <p><span>Home</span>/Quiz</p>
-        <h2>Latest Quizzes</h2>
+    <!--home of The webpage-->
+    <div class="container mb-2" id="home">
+      <p><span>Home</span>/Quiz</p>
+      <h2>Latest Quizzes</h2>
 
-        <!--cards belong to latest Quiz-->
-        <div class="cards row">
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Data Structure & Algorithm</h3>
-              <img src="/images/dsa-image.png" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <form action="/auth/question/<%= id1 %>" method="GET">
-                    <button type="submit" class="btn btn-light">Play</button>
-                    <button class="share-btn">
-                        <i class="fa-solid fa-share"></i>
-                    </button> 
-                </form>
-                
-             
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Computer Organization</h3>
-              <img src="/images/co.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <form action="/auth/question/<%= id2 %>" method="GET">
-                  <button type="submit" class="btn btn-light">Play</button>
-                  <button class="share-btn">
-                      <i class="fa-solid fa-share"></i>
-                  </button> 
-              </form>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Programming using C</h3>
-              <img src="/images/c.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <form action="/auth/question/<%= id3 %>" method="get">
-                  <button type="submit" class="btn btn-light">Play</button>
-                  <button class="share-btn">
-                      <i class="fa-solid fa-share"></i>
-                  </button> 
-              </form>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Baics of Web development</h3>
-              <img src="/images/Web development.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
+      <!--cards belong to latest Quiz-->
+      <div class="cards row">
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Data Structure & Algorithm</h3>
+            <img src="/images/dsa-image.png" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id1 %>" method="GET">
+                <button type="submit" class="btn btn-light">Play</button>
                 <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
                 </button>
-              </div>
+              </form>
             </div>
           </div>
+        </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Operating System</h3>
-              <img src="/images/operating-sytem.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button> 
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Computer Networking</h3>
-              <img src="/images/computer network.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Computer Organization</h3>
+            <img src="/images/co.webp" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id2 %>" method="GET">
+                <button type="submit" class="btn btn-light">Play</button>
                 <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
                 </button>
-              </div>
+              </form>
             </div>
           </div>
+        </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Cloud computing</h3>
-              <img src="/images/cloud computing.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Programming using C</h3>
+            <img src="/images/c.webp" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id3 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
+        </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Machine learning</h3>
-              <img src="/images/machine learning.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Baics of Web development</h3>
+            <img src="/images/Web development.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id4 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Operating System</h3>
+            <img src="/images/operating-sytem.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id5 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
+                  <i class="fa-solid fa-share"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Computer Networking</h3>
+            <img src="/images/computer network.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id6 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
+                  <i class="fa-solid fa-share"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Cloud computing</h3>
+            <img src="/images/cloud computing.webp" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id7 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
+                  <i class="fa-solid fa-share"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card">
+            <h3>Machine learning</h3>
+            <img src="/images/machine learning.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id8 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
+                  <i class="fa-solid fa-share"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--Cards belong to trending quizzes-->
+    <!--Cards belong to trending quizzes-->
 
-      <div class="container mb-2" id="trending-quiz">
-        <p><span>Trending</span>/Quiz</p>
-        <h2>Trending Quizzes</h2>
-        <div class="cards row">
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Data Structure & Algorithm</h3>
-              <img src="/images/dsa-image.png" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+    <div class="container mb-2" id="trending-quiz">
+      <p><span>Trending</span>/Quiz</p>
+      <h2>Trending Quizzes</h2>
+      <div class="cards row">
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Data Structure & Algorithm</h3>
+            <img src="/images/dsa-image.png" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id1 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Programming using C</h3>
-              <img src="/images/c.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Programming using C</h3>
+            <img src="/images/c.webp" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id3 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Bollywood in 2023</h3>
-              <img src="/images/bollywood.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Bollywood in 2023</h3>
+            <img src="/images/bollywood.webp" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id9 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--cards belong to entertainment-->
+    <!--cards belong to entertainment-->
 
-      <div class="container mb-2" id="Entertainment-quiz">
-        <p><span>Entertainment</span>/Quiz</p>
-        <h2>Entertainment Quizzes</h2>
-        <div class="cards row">
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Bollywood in 2023</h3>
-              <img src="/images/bollywood.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+    <div class="container mb-2" id="Entertainment-quiz">
+      <p><span>Entertainment</span>/Quiz</p>
+      <h2>Entertainment Quizzes</h2>
+      <div class="cards row">
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Bollywood in 2023</h3>
+            <img src="/images/bollywood.webp" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id9 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Best of hollywood in 2023</h3>
-              <img src="/images/International movies.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Best of hollywood in 2023</h3>
+            <img src="/images/International movies.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id10 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>South-indian movies in 2023</h3>
-              <img src="/images/south indian.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>South-indian movies in 2023</h3>
+            <img src="/images/south indian.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id11 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--Cards belong to world travel quizzes-->
+    <!--Cards belong to world travel quizzes-->
 
-      <div class="container mb-2" id="world-travel-quiz">
-        <p><span>Travel</span>/Quiz</p>
-        <h2>World Travel Quizzes</h2>
-        <div class="cards row">
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Our beautiful India</h3>
-              <img src="/images/India.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+    <div class="container mb-2" id="world-travel-quiz">
+      <p><span>Travel</span>/Quiz</p>
+      <h2>World Travel Quizzes</h2>
+      <div class="cards row">
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Our beautiful India</h3>
+            <img src="/images/India.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id12 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Pleasant Europe</h3>
-              <img src="/images/europe.avif" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Pleasant Europe</h3>
+            <img src="/images/europe.avif" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id13 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <div class="card">
-              <h3>Modern world in USA</h3>
-              <img src="/images/usa.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                {{!-- <button class="share-btn">
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <h3>Modern world in USA</h3>
+            <img src="/images/usa.jpg" alt="image" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur excepdljfoei ojdf
+              </p>
+              <form action="/auth/question/<%= id14 %>" method="get">
+                <button type="submit" class="btn btn-light">Play</button>
+                <button class="share-btn">
                   <i class="fa-solid fa-share"></i>
-                </button> --}}
-              </div>
+                </button>
+              </form>
             </div>
           </div>
         </div>

@@ -5,11 +5,22 @@ const path = require("path");
 const dotenv = require("dotenv");
 const { MongoClient } = require("mongodb");
 const {
-  User,
   Question,
   ComputerOrganization,
   ProgrammingUsingC,
+  User,
   DSA,
+  Webdev,
+  OS,
+  Networking,
+  CloudComputing,
+  MachineLearning,
+  Bollywood,
+  Hollywood,
+  Tollywood,
+  India,
+  Europe,
+  USA,
 } = require("./models/user");
 
 dotenv.config({ path: "./.env" });
@@ -122,7 +133,137 @@ app.post("/admin/Computer_organization", async (req, res) => {
   res.send("question submitted..");
 });
 
-//this route is testing purpose:
-app.get("/test", (req, res) => {
-  console.log("test route is working...");
+app.post("/admin/Webdev", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await Webdev.insertMany([data]);
+  res.send("question submitted..");
+});
+app.post("/admin/OS", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await OS.insertMany([data]);
+  res.send("question submitted..");
+});
+app.post("/admin/Networking", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await Networking.insertMany([data]);
+  res.send("question submitted..");
+});
+
+app.post("/admin/CloudComputing", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await CloudComputing.insertMany([data]);
+  res.render("/admin/CloudComputing");
+});
+app.post("/admin/MachineLearning", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await MachineLearning.insertMany([data]);
+  res.send("question submitted..");
+});
+app.post("/admin/Bollywood", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await Bollywood.insertMany([data]);
+  res.send("question submitted..");
+});
+app.post("/admin/Hollywood", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await Hollywood.insertMany([data]);
+  res.send("question submitted..");
+});
+
+app.post("/admin/Tollywood", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await Tollywood.insertMany([data]);
+  res.send("question submitted..");
+});
+app.post("/admin/India", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await India.insertMany([data]);
+  res.send("question submitted..");
+});
+app.post("/admin/Europe", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await Europe.insertMany([data]);
+  res.send("question submitted..");
+});
+app.post("/admin/USA", async (req, res) => {
+  let data = {
+    qs: req.body.qs,
+    option1: req.body.option1,
+    option2: req.body.option2,
+    option3: req.body.option3,
+    option4: req.body.option4,
+    answer: req.body.answer,
+  };
+  await USA.insertMany([data]);
+  res.send("question submitted..");
 });
