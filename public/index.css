@@ -7,7 +7,7 @@ body {
 /*Style for header*/
 .header {
   z-index: 2;
-  height: 4rem;
+  height: 12vh;
   background-color: #020b1a;
   color: white;
   align-items: center;
@@ -20,8 +20,8 @@ body {
 .logo-1stpart {
   border-radius: 50%;
   background-color: #3679e3;
-  padding: 0.5rem 0.8rem;
-  font-size: 1.6rem;
+  padding: 0.5vh 1.3vh;
+  font-size: 5vh;
 }
 .nav-bar a {
   text-decoration: none;
@@ -155,4 +155,10 @@ h2 {
 }
 .card-body p {
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 760px) {
+  .heading-content {
+    display: none;
+  }
 }
