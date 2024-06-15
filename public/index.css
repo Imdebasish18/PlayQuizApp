@@ -5,7 +5,7 @@ body {
 }
 
 /*Style for header*/
-.header {
+/* .header {
   z-index: 2;
   height: 12vh;
   background-color: #020b1a;
@@ -46,7 +46,7 @@ body {
   border: 3px solid black;
   border-radius: 4px;
   padding: 8px 8px;
-}
+} */
 
 .heading-background {
   background-image: url("./images/bg-header.jpg");

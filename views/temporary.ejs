@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/header.css" />
   </head>
   <body>
     <% let id1="DSA" %> <% let id2="ComputerOrganization" %> <% let
@@ -29,7 +30,7 @@
     id13="Europe" %> <% let id14= "USA" %>
 
     <!--Header of the webpage-->
-    <div class="header row">
+    <!-- <div class="header row">
       <div class="logo col-2">
         <span class="logo-1stpart">FT</span>
         <span class="logo-2stpart">Quiz</span>
@@ -45,9 +46,44 @@
           <button class="login-btn">Log Out</button>
         </form>
       </div>
+    </div> -->
+
+    <div class="header row">
+      <div class="logo col-1">
+        <div class="logo-1stpart playfair-display">FT</div>
+        <div class="logo-2ndpart">Quiz</div>
+      </div>
+      <div class="nav-bar albert-sans">
+        <a href="/">Home</a>
+        <a href="#trending-quiz">Trending</a>
+        <a href="#">Categories</a>
+        <a href="#">Information</a>
+      </div>
+      <div class="login-join col-3">
+        <form action="/" method="GET">
+          <button class="logout-btn">Log Out</button>
+        </form>
+      </div>
+      <div class="menu-bar col-1">
+        <img
+          src="/images/menu.png"
+          alt=""
+          class="dropbtn"
+          onclick="toggleDropdown()"
+        />
+      </div>
+      <div class="dropdown-content" id="dropdownContent">
+        <div class="subContent albert-sans">
+          <div class="menuOption"><a href="/">Log Out </a></div>
+          <div class="menuOption"><a href="#trending-quiz">Trending</a></div>
+          <div class="menuOption"><a href="#">Information</a></div>
+          <div class="menuOption"><a href="#">Help</a></div>
+        </div>
+      </div>
     </div>
 
     <!--home of The webpage-->
+    <br /><br /><br />
     <div class="container mb-2" id="home">
       <p><span>Home</span>/Quiz</p>
       <h2>Latest Quizzes</h2>

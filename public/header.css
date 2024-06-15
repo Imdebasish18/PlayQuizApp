@@ -1,0 +1,166 @@
+html {
+  font-size: 1rem;
+}
+.albert-sans {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fac7fa, #365096);
+  height: 100vh;
+  width: 100vw;
+}
+
+/*Style for header*/
+.header {
+  z-index: 2;
+  height: 12vh;
+  background-color: #020b1a;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+}
+.menu-bar {
+  display: none;
+}
+.logo {
+  width: 10%;
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+}
+.logo-1stpart {
+  border-radius: 50%;
+  background-color: #3679e3;
+  padding: 0.5rem 0.9rem;
+  font-size: 2.1rem;
+}
+.logo-2ndpart {
+  font-size: 1.9rem;
+  margin-left: 0.7vw;
+}
+.nav-bar {
+  width: 60%;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 0.7rem;
+  font-size: 1.1rem;
+}
+
+.login-join {
+  width: 25%;
+}
+.login-join form {
+  display: inline;
+}
+
+.login-join form button {
+  border-style: none;
+  margin: 0 0.5rem;
+}
+.login-btn {
+  color: white;
+  background-color: #020b1a;
+  font-size: 1.05rem;
+}
+.logout-btn {
+  color: white;
+  background-color: #020b1a;
+  font-size: 1.05rem;
+}
+.join-btn {
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 8px 8px;
+  font-size: 1.1rem;
+}
+
+#dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  width: 40%;
+  background-color: #04132c;
+}
+.subContent .menuOption a {
+  text-decoration: none;
+
+  font-size: 1rem;
+  color: white;
+}
+.subContent .menuOption {
+  text-align: left;
+  padding: 2vh 4vh;
+}
+.subContent .menuOption:hover {
+  background-color: #1f3357;
+}
+
+@media (max-width: 640px) {
+  .html {
+    font-size: 0.7rem;
+  }
+  .header {
+    height: 9vh;
+  }
+  .menu-bar {
+    width: 5%;
+    margin-right: 2%;
+    display: inline;
+    background-color: #020b1a;
+  }
+  .menu-bar img {
+    width: 6vw;
+  }
+  .logo {
+    width: 30%;
+    margin-right: 32%;
+    display: flex;
+    margin-left: 4px;
+  }
+  .logo-1stpart {
+    width: 50%;
+    border-radius: 50%;
+    background-color: #3679e3;
+    padding: 0.5rem 0.9rem;
+    font-size: 2.1rem;
+  }
+  .logo-2ndpart {
+    width: 50%;
+    font-size: 4vw;
+    margin-left: 0.5vw;
+  }
+  .nav-bar,
+  .login-btn {
+    display: none;
+  }
+  .login-join {
+    width: 25%;
+    margin-right: 1%;
+  }
+  .join-btn {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 2vw 1vw;
+  }
+  .logout-btn {
+    display: none;
+  }
+}

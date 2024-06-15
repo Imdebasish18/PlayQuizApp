@@ -18,3 +18,31 @@ buttons.forEach((button) => {
     alert("Join us for free and play the quize!");
   });
 });
+
+function toggleDropdown() {
+  let dropdownContent = document.getElementById("dropdownContent");
+  let dropBtn = document.querySelector(".dropbtn");
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    dropBtn.src = "./images/menu.png";
+  } else {
+    dropdownContent.style.display = "block";
+    dropBtn.src = "./images/cross.png";
+  }
+  // Prevent event from bubbling up to the window onclick handler
+  event.stopPropagation();
+}
+
+window.onclick = function (event) {
+  let dropdownContent = document.getElementById("dropdownContent");
+  let dropBtn = document.querySelector(".dropbtn");
+
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    dropBtn.src = "./images/menu.png"; // Ensure the original image is set
+  }
+};
+// Prevent the dropdown menu from closing when clicking inside it
+document.getElementById("dropdownContent").onclick = function (event) {
+  event.stopPropagation();
+};
