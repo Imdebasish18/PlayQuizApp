@@ -1,164 +1,228 @@
-body {
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.display-block {
+  display: block;
+}
+.slogan-box {
+  height: 88vh;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(10, 105, 194, 0.904),
+      rgba(241, 67, 241, 0.5)
+    ),
+    linear-gradient(to bottom, #54e946, #e20662);
+}
+.slogan-content {
+  height: 64vh;
+  width: 88vw;
+  padding: 18vh 5vw 6vh 5vw;
+}
+.slogan-bold {
+  font-weight: 800;
+  font-size: 3.2rem;
+  color: #69eed1;
+}
+
+.slogan-content p {
+  margin-top: 5vh;
+  font-size: 1.3rem;
+  color: silver;
+}
+.slogan-content form {
+  margin-top: 9vh;
+}
+.slogan-content form button {
+  font-size: 1.3rem;
+  padding: 1.5vh 2vw;
+  border-radius: 24px;
+  border-color: rgb(236, 33, 169);
+  color: rgb(190, 38, 38);
+}
+.slogan-content form button:hover {
+  background-color: #e20662;
+  color: greenyellow;
+}
+.categories-box {
+  margin: 5vh;
+}
+.categories-box h2 {
+  color: rgb(172, 166, 166);
+  text-align: center;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #fac7fa, #365096);
 }
-
-/*Style for header*/
-/* .header {
-  z-index: 2;
-  height: 12vh;
-  background-color: #020b1a;
-  color: white;
+.categories-box hr {
+  width: 220px;
+  text-align: center;
+  border-top: 1px solid rgb(172, 165, 165);
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: auto;
+}
+.card {
+  margin: 3vw;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.card h3 {
+  font-size: 1.3rem;
+}
+.card .card-body p {
   text-align: center;
-  position: fixed;
-  width: 100%;
-  margin: 0;
+  color: rgb(138, 122, 122);
 }
-
-.logo-1stpart {
-  border-radius: 50%;
-  background-color: #3679e3;
-  padding: 0.5vh 1.3vh;
-  font-size: 5vh;
-}
-.nav-bar a {
-  text-decoration: none;
-  color: white;
-  margin: 0 0.7rem;
-  font-size: 1.1rem;
-}
-
-.login-join form {
-  display: inline;
-}
-
-.login-join form button {
-  border-style: none;
-  margin: 0 0.5rem;
-}
-.login-btn {
-  color: white;
-  background-color: #020b1a;
-}
-.join-btn {
-  border: 3px solid black;
-  border-radius: 4px;
-  padding: 8px 8px;
-} */
-
-.heading-background {
-  background-image: url("./images/bg-header.jpg");
-  height: 20rem;
-  background-size: cover;
-}
-.heading-content {
-  top: 9.6rem;
-  text-align: center;
-  background-color: #eebde0;
-  padding: 11px 22px;
-  margin: 0 27rem;
-  position: absolute;
-  /* bottom: 2rem; */
-}
-.cards .btn {
-  border-color: black;
-  padding: 0.4em 1.3em;
-  margin-right: 5.5em;
-}
-.cards .btn:hover {
-  background-color: #001e28;
-  border-color: #001e28;
-  color: white;
-}
-.card-body .share-btn {
-  border: 1px solid black;
-  padding: 0.6em 0.9em;
-  border-radius: 50%;
-  align-self: center;
-}
-.card-body .share-btn:hover {
-  color: white;
-  background-color: #1eb2e4;
-  border-color: #1eb2e4;
-}
-.cards .card {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 0.8em;
-  height: 370px;
-  padding: 4px;
-}
-.cards .card:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-}
-.cards .card h3 {
-  font-size: 1.5em;
-  font-weight: 500;
-}
-.cards .card img {
-  background-size: cover;
-  margin: 3px;
-  border-radius: 3px;
+.card img {
+  width: 27%;
   height: 40%;
+}
+.more-btn-container {
+  text-align: center;
+}
+.more-btn {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgb(109, 105, 105);
+
+  margin: 0;
+  padding: 0;
+}
+
+.more-btn:hover {
+  color: rgb(20, 148, 207);
+  text-decoration: underline;
+}
+.join-us-slogan {
+  width: 100%;
+  height: 33vh;
+  /* background-color: #0442c1; */
+  background-color: #0e3e66;
+  display: grid;
+  place-items: center;
+}
+.slogan {
+  font-size: 6vh;
+  color: white;
+  text-align: center;
+  margin: 1vh 9vw;
+}
+.join-us-btn {
+  font-size: 1.3rem;
+  padding: 12px 35px;
+  color: white;
+  background-color: rgb(197, 21, 21);
+  border: 1px solid #0e3e66;
+  text-align: center;
+}
+.join-us-btn:hover {
+  border-color: rgba(250, 6, 6, 0.966);
+  background-color: rgba(250, 6, 6, 0.966);
+}
+
+.team-members-container {
+  margin: 0;
+  padding: 10vh 0;
+  background-color: #e7e1e1;
+}
+.team-members-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: auto;
+}
+.team-member {
+  margin: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-member img {
+  width: 221px;
+  height: 285px;
+  border-radius: 10px;
+}
+.team-member .member-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #807fe2;
+  margin: 3vh 0 3vh 0;
+}
+.team-member .member-name:hover {
+  color: rgb(39, 75, 196);
+}
+.team-member .member-role {
+  font-size: 0.9rem;
+  color: rgb(158, 154, 154);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.team-members-container h2 {
+  color: rgb(172, 166, 166);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.team-members-container hr {
+  width: 220px;
+  text-align: center;
+  border-top: 1px solid rgb(172, 165, 165);
 }
 footer {
   display: flex;
+  height: 40vh;
+  background-color: #0442c1;
+  justify-content: center;
+}
+footer .item {
+  margin: 4vh 4vw;
+  width: 33.3%;
+}
+.footer-logo {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  margin-top: 60px;
-}
-.powered-by {
-  margin-left: 72px;
-}
-#scrollToTopBtn {
-  margin-right: 38px;
-  border: 1px solid #001e28;
-  border-radius: 50%;
-  background-color: #001e28;
+  /* justify-content: center; */
   color: white;
-  padding: 0.2em 0.6em;
+  margin: 0;
 }
-#scrollToTopBtn:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+.footer-logo img {
+  width: 23px;
+  height: 23px;
+  margin-right: 4px;
+  padding: 0;
 }
-.made-by {
-  color: rgb(134, 129, 129);
-  font-size: 0.8rem;
-  margin-right: 6px;
+.footer-msg,
+.copyright {
+  color: rgb(207, 187, 207);
+  margin: 2vh 0;
+  font-size: 0.9rem;
 }
-.name {
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  font-size: 1.1rem;
-  color: rgba(70, 69, 69, 0.896);
-  font-family: "Times New Roman", Times, serif;
+footer a {
+  color: rgb(207, 187, 207);
+  text-decoration: none;
 }
-#home,
-#trending-quiz,
-#Entertainment-quiz,
-#world-travel-quiz {
-  padding-top: 4rem;
+.Links {
+  display: flex;
+  flex-direction: column;
 }
-.container p span {
-  color: #055fee;
-  font-weight: 600;
+.contact-us {
+  display: flex;
+  flex-direction: column;
 }
-h2 {
-  margin-bottom: 2rem;
+.link {
+  margin: 1vh 0;
+  font-size: 0.9rem;
 }
-.card {
-  margin: 0.1em;
+.link:hover {
+  text-decoration: underline;
 }
-.card-body p {
-  margin-bottom: 2.5rem;
-}
-
-@media (max-width: 760px) {
-  .heading-content {
-    display: none;
-  }
+h4 {
+  color: white;
 }

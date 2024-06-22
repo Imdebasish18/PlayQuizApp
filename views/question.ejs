@@ -9,13 +9,13 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 20px;
-        background-color: #f0f0f0;
+        background: linear-gradient(to right, #fac7fa, #365096);
       }
       .question-container {
         max-width: 600px;
-        margin: auto;
+        margin: 14vh auto;
         padding: 20px;
-        background-color: white;
+        background-color: rgb(206, 248, 171);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
       .option {
@@ -39,6 +39,10 @@
         background-color: red;
         color: white;
       }
+      .btns {
+        display: flex;
+        justify-content: space-between;
+      }
       .submit-btn {
         margin-top: 20px;
         padding: 10px 20px;
@@ -58,9 +62,6 @@
         border: none;
         cursor: pointer;
       }
-      .exit-btn {
-        margin-left: 408px;
-      }
     </style>
   </head>
   <body>
@@ -78,9 +79,11 @@
       <div class="option" data-option="option4">
         <%= randomQuestion.option4 %>
       </div>
-      <button class="submit-btn" type="submit">Submit Answer</button>
-      <button class="next-btn">Next Question</button>
-      <button class="exit-btn">Exit</button>
+      <div class="btns">
+        <button class="submit-btn" type="submit">Submit Answer</button>
+        <button class="next-btn">Next Question</button>
+        <button class="exit-btn">Exit</button>
+      </div>
     </div>
 
     <script>

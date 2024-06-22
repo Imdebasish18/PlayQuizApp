@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <body>
+    <!--Header content-->
+    <nav>
+      <div class="header row">
+        <div class="logo col-1">
+          <img src="./images/quiz.png" alt="logo" />
+          <div class="logo-2ndpart">Quizify</div>
+        </div>
+        <div class="nav-bar albert-sans">
+          <a href="/">Home</a>
+          <a href="#trending-quiz">Trending</a>
+          <a href="#">Categories</a>
+          <a href="#">Information</a>
+        </div>
+        <div class="login-join col-3">
+          <form action="/login" method="GET">
+            <button class="login-btn">Login</button>
+          </form>
+
+          <form action="/register" method="GET">
+            <button class="join-btn">Join for free</button>
+          </form>
+        </div>
+        <div class="menu-bar col-1">
+          <img
+            src="./images/menu.png"
+            alt=""
+            class="dropbtn"
+            onclick="toggleDropdown()"
+          />
+        </div>
+        <div class="dropdown-content" id="dropdownContent">
+          <div class="subContent albert-sans">
+            <div class="menuOption"><a href="/login">Login </a></div>
+            <div class="menuOption"><a href="/">Home</a></div>
+            <div class="menuOption"><a href="#trending-quiz">Trending</a></div>
+            <div class="menuOption"><a href="#">Information</a></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Body content-->
+    <div class="slogan-box">
+      <div class="slogan-content">
+        <h1>
+          <span class="slogan-bold display-block">Welcome You!</span>
+          <span class="slogan-bold display-block"
+            >We are here to make Your Study</span
+          >
+          <span class="slogan-bold display-block">Fun for You</span>
+        </h1>
+        <p>
+          Practice makes you perfect. Here you can practice, test and improve
+          Yourself.
+        </p>
+        <form action="/home" method="get">
+          <button class="btn btn-primary btn-lg btn-start" type="submit">
+            Let's start with a quiz
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!--What we offer section-->
+
+    <div class="categories-box">
+      <h2>What content we offer</h2>
+      <hr />
+      <div class="categories">
+        <div class="card">
+          <img src="/images/Data Structure.png" alt="image" />
+          <h3>Data Structure & Algorithm</h3>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur excepdljfoei ojdf
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/C-Programming.png" alt="image" />
+          <h3>Programming Using C</h3>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur excepdljfoei ojdf
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/machine-learning.png" alt="image" />
+          <h3>Machine Learning</h3>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur excepdljfoei ojdf
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/networking.png" alt="image" />
+          <h3>Computer Networking</h3>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur excepdljfoei ojdf
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/computer Organization.png" alt="image" />
+          <h3>Computer Organization</h3>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur excepdljfoei ojdf
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/database.png" alt="image" />
+          <h3>DBMS</h3>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur excepdljfoei ojdf
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="more-btn-container">
+        <a href="#" class="more-btn">more categories</a>
+      </div>
+    </div>
+
+    <!--join-us slogan-->
+    <div class="join-us-slogan">
+      <div class="slogan">For playing interesting quizess Join Us for free</div>
+      <button class="join-us-btn">Join Us</button>
+    </div>
+
+    <!--Team members section-->
+    <div class="team-members-container">
+      <h2>Meat Our Team</h2>
+      <hr />
+      <div class="team-members-box">
+        <div class="team-member">
+          <img src="/images/koushaki.jpg" alt="" />
+          <div class="member-name"><span>Koushaki Singha</span></div>
+          <div class="member-role"><span>Frontend developer</span></div>
+        </div>
+        <div class="team-member">
+          <img src="/images/Jayasmita Dey.jpg" alt="" />
+          <div class="member-name"><span>Jayasmita Dey</span></div>
+          <div class="member-role"><span>Team Leader</span></div>
+        </div>
+        <div class="team-member">
+          <img src="/images/Koushik Kumar Mondal.jpg" alt="" />
+          <div class="member-name"><span>Koushik Kumar Mondal</span></div>
+          <div class="member-role"><span>Back End Developer</span></div>
+        </div>
+        <div class="team-member">
+          <img src="/images/shuvo.jpg" alt="" />
+          <div class="member-name"><span>Shubhajit Barman</span></div>
+          <div class="member-role"><span>Database Manager</span></div>
+        </div>
+        <div class="team-member">
+          <img src="/images/Rounak.jpg" alt="" />
+          <div class="member-name"><span>Rounak Chowdhury</span></div>
+          <div class="member-role"><span>Back End Developer</span></div>
+        </div>
+        <div class="team-member">
+          <img src="images/abhimanyu.jpg" alt="" />
+          <div class="member-name"><span>Abhimanyu Roy</span></div>
+          <div class="member-role"><span>Frontend developer</span></div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="poppins-extralight">
+      <div class="copyright item">
+        <div class="footer-logo">
+          <img src="./images/quiz.png" alt="logo" />
+          <h3 class="footer-logo-2ndpart">Quizify</h3>
+        </div>
+        <div class="footer-msg">Engage your friends with exciting quizes!</div>
+        <div class="copyright">Copyright &copy; 2024 - All rights reserved</div>
+      </div>
+      <div class="Links item">
+        <h4>Links</h4>
+        <a href="#" class="link">Give your suggestions</a>
+        <a href="#" class="link">Know about Us</a>
+        <a href="#" class="link">Information</a>
+      </div>
+      <div class="contact-us item">
+        <h4>Contact Us</h4>
+        <a href="#" class="link">jayasmitao1@gmail.com</a>
+        <a href="#" class="link">koushaki231@gmail.com</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

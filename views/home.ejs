@@ -24,39 +24,16 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
     </style>
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/home.css" />
     <link rel="stylesheet" href="/header.css" />
   </head>
   <body>
     <!-- Header of the webpage-->
-    <!-- <div class="header row">
-      <div class="logo col-2">
-        <span class="logo-1stpart">FT</span>
-        <span class="logo-2stpart">Quiz</span>
-      </div>
-      <div class="nav-bar col-7">
-        <a href="/">Home</a>
-        <a href="#trending-quiz">Trending</a>
-        <a href="#">Categories</a>
-        <a href="#">Information</a>
-      </div>
-      <div class="login-join col-3">
-        <form action="/login" method="GET">
-          <button class="login-btn">Login</button>
-        </form>
 
-        <form action="/register" method="GET">
-          <button class="join-btn">Join for free</button>
-        </form>
-      </div>
-    </div> -->
     <div class="header row">
-      <!-- <div class="menu-bar col-1">
-        <a href="#"><img src="./images/menu.png" alt="" /></a>
-      </div> -->
       <div class="logo col-1">
-        <div class="logo-1stpart playfair-display">FT</div>
-        <div class="logo-2ndpart">Quiz</div>
+        <img src="./images/quiz.png" alt="logo" />
+        <div class="logo-2ndpart">Quizify</div>
       </div>
       <div class="nav-bar albert-sans">
         <a href="/">Home</a>
@@ -93,7 +70,6 @@
     <!--Main content of the webpage-->
     <div class="main-content">
       <div class="heading">
-        <div class="heading-background"></div>
         <div class="heading-content">
           <h1>Welcome to FT Quiz</h1>
           <p>
@@ -107,148 +83,152 @@
       </div>
 
       <!--home of The webpage-->
-      <div class="container mb-2" id="home">
-        <p><span>Home</span>/Quiz</p>
-        <h2>Latest Quizzes</h2>
+      <div class="heading-background">
+        <br /><br />
+        <div class="container mb-2" id="home">
+          <p><span>Home</span>/Quiz</p>
+          <h2>Latest Quizzes</h2>
 
-        <!--cards belong to latest Quiz-->
-        <div class="cards row">
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Data Structure & Algorithm</h3>
-              <img src="/images/dsa-image.png" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+          <!--cards belong to latest Quiz-->
+          <div class="cards row">
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Data Structure & Algorithm</h3>
+                <img src="/images/dsa-image.png" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Computer Organization</h3>
-              <img src="/images/co.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Computer Organization</h3>
+                <img src="/images/co.webp" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Programming using C</h3>
-              <img src="/images/c.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Programming using C</h3>
+                <img src="/images/c.webp" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Baics of Web development</h3>
-              <img src="/images/Web development.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Baics of Web development</h3>
+                <img src="/images/Web development.jpg" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Operating System</h3>
-              <img src="/images/operating-sytem.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Operating System</h3>
+                <img src="/images/operating-sytem.jpg" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Computer Networking</h3>
-              <img src="/images/computer network.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Computer Networking</h3>
+                <img src="/images/computer network.jpg" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Cloud computing</h3>
-              <img src="/images/cloud computing.webp" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Cloud computing</h3>
+                <img src="/images/cloud computing.webp" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3 mb-4">
-            <div class="card">
-              <h3>Machine learning</h3>
-              <img src="/images/machine learning.jpg" alt="image" />
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur excepdljfoei ojdf
-                </p>
-                <button type="button" class="btn btn-light">Play</button>
-                <button class="share-btn">
-                  <i class="fa-solid fa-share"></i>
-                </button>
+            <div class="col-sm-12 col-md-3 mb-4">
+              <div class="card">
+                <h3>Machine learning</h3>
+                <img src="/images/machine learning.jpg" alt="image" />
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur excepdljfoei ojdf
+                  </p>
+                  <button type="button" class="btn btn-light">Play</button>
+                  <button class="share-btn">
+                    <i class="fa-solid fa-share"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <br /><br />
       </div>
 
       <!--Cards belong to trending quizzes-->
