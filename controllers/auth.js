@@ -137,6 +137,7 @@ const fetchRandomDocument = async (modelName) => {
     }
     const randomIndex = Math.floor(Math.random() * count);
     const randomDocument = await model.findOne().skip(randomIndex);
+    // const randomDocuments = await model.aggregate([{ $sample: { size: 5 } }]);
 
     return randomDocument;
   } catch (err) {
