@@ -128,7 +128,7 @@ body {
   }
   .menu-bar {
     width: 5%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     display: inline;
     background-color: #020b1a;
   }
