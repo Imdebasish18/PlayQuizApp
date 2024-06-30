@@ -128,34 +128,27 @@ body {
   }
   .menu-bar {
     width: 5%;
-    margin-right: 2%;
+    margin-left: 5%;
     display: inline;
     background-color: #020b1a;
   }
   .menu-bar img {
     width: 6vw;
-    margin-left: 40%;
   }
   .logo {
-    width: 30%;
-    margin-right: 30%;
+    width: 28%;
+    margin-right: 32%;
     display: flex;
     margin-left: 2%;
   }
   .logo img {
-    width: 5vh;
-  }
-  .logo-1stpart {
-    width: 50%;
-    border-radius: 50%;
-    background-color: #3679e3;
-    padding: 0.5rem 0.75rem;
-    font-size: 1.1rem;
+    /* width: 5vh; */
+    width: 36%;
   }
   .logo-2ndpart {
-    width: 50%;
+    width: 60%;
     font-size: 4vw;
-    margin-left: 0.5vw;
+    margin-left: 4%;
   }
   .nav-bar,
   .login-btn {
