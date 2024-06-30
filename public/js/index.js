@@ -46,5 +46,3 @@ window.onclick = function (event) {
 document.getElementById("dropdownContent").onclick = function (event) {
   event.stopPropagation();
 };
-
-let hr = document.querySelector(".");
