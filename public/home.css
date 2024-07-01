@@ -64,7 +64,7 @@ body {
   height: 40%;
 }
 
-footer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,6 +117,57 @@ h2 {
 }
 .card-body p {
   margin-bottom: 2.5rem;
+}
+footer {
+  display: flex;
+  height: 32vh;
+  background-color: #0442c1;
+  justify-content: center;
+}
+footer .item {
+  margin: 4vh 4vw;
+  width: 33.3%;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+  margin: 0;
+}
+.footer-logo img {
+  width: 23px;
+  height: 23px;
+  margin-right: 4px;
+  padding: 0;
+}
+.footer-msg,
+.copyright {
+  color: rgb(207, 187, 207);
+  margin: 2vh 0;
+  font-size: 0.9rem;
+}
+footer a {
+  color: rgb(207, 187, 207);
+  text-decoration: none;
+}
+.Links {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  margin: 1vh 0;
+  font-size: 0.9rem;
+}
+.link:hover {
+  text-decoration: underline;
+}
+h4 {
+  color: white;
 }
 
 @media (max-width: 640px) {

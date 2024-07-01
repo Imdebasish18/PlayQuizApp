@@ -180,7 +180,7 @@ body {
 }
 footer {
   display: flex;
-  height: 40vh;
+  height: 35vh;
   background-color: #0442c1;
   justify-content: center;
 }

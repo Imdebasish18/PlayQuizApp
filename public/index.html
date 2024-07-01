@@ -21,9 +21,9 @@
         <div class="logo-2ndpart">Quizify</div>
       </div>
       <div class="nav-bar albert-sans">
-        <a href="/">Home</a>
-        <a href="#trending-quiz">Trending</a>
-        <a href="#">Categories</a>
+        <a href="/home">Home</a>
+        <a href="/home#trending-quiz">Trending</a>
+        <a href="#catagories">Categories</a>
         <a href="#">Information</a>
       </div>
       <div class="login-join col-3">
@@ -75,7 +75,7 @@
 
     <!--What we offer section-->
 
-    <div class="categories-box">
+    <div class="categories-box" id="catagories">
       <h2>What content we offer</h2>
       <hr />
       <div class="categories">
@@ -141,14 +141,16 @@
         </div>
       </div>
       <div class="more-btn-container">
-        <a href="#" class="more-btn">more categories</a>
+        <a href="/home#Entertainment-quiz" class="more-btn">more categories</a>
       </div>
     </div>
 
     <!--join-us slogan-->
     <div class="join-us-slogan">
       <div class="slogan">For playing interesting quizess Join Us for free</div>
-      <button class="join-us-btn">Join Us</button>
+      <form action="/register" method="GET">
+        <button class="join-us-btn">Join Us</button>
+      </form>
     </div>
 
     <!--Team members section-->
@@ -168,7 +170,7 @@
         </div>
         <div class="team-member">
           <img src="/images/Koushik Kumar Mondal.jpg" alt="" />
-          <div class="member-name"><span>Koushik Kumar Mondal</span></div>
+          <div class="member-name"><span>Kousik Kumar Mandal</span></div>
           <div class="member-role"><span>Back End Developer</span></div>
         </div>
         <div class="team-member">
@@ -204,11 +206,11 @@
         <a href="#" class="link">Know about Us</a>
         <a href="#" class="link">Information</a>
       </div>
-      <!-- <div class="contact-us item">
+      <div class="contact-us item">
         <h4>Contact Us</h4>
         <a href="#" class="link">jayasmitao1@gmail.com</a>
         <a href="#" class="link">koushaki231@gmail.com</a>
-      </div> -->
+      </div>
     </footer>
     <script src="./js/index.js"></script>
   </body>
