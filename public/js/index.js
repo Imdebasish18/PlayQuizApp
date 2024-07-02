@@ -16,7 +16,7 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => {
     // Show an alert dialog when the button is clicked
     // alert("Join us for free and play the quize!");
-    window.location.href = "http://localhost:8080/register?";
+    window.location.href = "https://playquizapp.onrender.com/register?";
   });
 });
 
