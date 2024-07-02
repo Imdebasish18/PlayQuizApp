@@ -62,6 +62,12 @@ exports.register = async (req, res) => {
         name: req.body.name,
         email: req.body.email,
       });
+    } else {
+      return res.render("RegisterForm", {
+        message: "You are registered!",
+        name: "",
+        email: "",
+      });
     }
 
     // Insert the new user data into the database

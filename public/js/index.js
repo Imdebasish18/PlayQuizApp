@@ -15,7 +15,8 @@ let buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     // Show an alert dialog when the button is clicked
-    alert("Join us for free and play the quize!");
+    // alert("Join us for free and play the quize!");
+    window.location.href = "http://localhost:8080/register?";
   });
 });
 
