@@ -49,7 +49,6 @@ exports.register = async (req, res) => {
     name: req.body.name,
     email: req.body.email,
     password: req.body.password,
-    // passwordConfirm: req.body.passwordConfirm,
   };
 
   try {
@@ -62,20 +61,12 @@ exports.register = async (req, res) => {
         name: req.body.name,
         email: req.body.email,
       });
-    } else {
-      return res.render("RegisterForm", {
-        message: "You are registered!",
-        name: "",
-        email: "",
-      });
     }
-
-    // Insert the new user data into the database
     await User.insertMany([data]);
     res.render("RegisterForm", {
-      message: "",
-      name: req.body.name,
-      email: req.body.email,
+      message: "You are registered!",
+      name: "",
+      email: "",
     });
   } catch (error) {
     console.error(error);
