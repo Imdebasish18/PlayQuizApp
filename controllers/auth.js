@@ -182,7 +182,7 @@ exports.answer = async (req, res) => {
 
     const isMatch = answer == userGivenAnswer;
 
-    res.json({ isMatch });
+    res.json({ isMatch, answer }); //changed
   } catch (error) {
     console.error("Error checking answer:", error);
     res.status(500).send("Internal Server Error");

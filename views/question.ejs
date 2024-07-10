@@ -28,7 +28,7 @@
         background-color: lightblue;
       }
       .option.selected {
-        background-color: blue;
+        background-color: rgb(67, 127, 218);
         color: white;
       }
       .option.correct {
@@ -138,10 +138,22 @@
         })
           .then((response) => response.json())
           .then((data) => {
+            console.log(data.answer);
             if (data.isMatch == true) {
               selectedOption.classList.add("correct");
             } else {
               selectedOption.classList.add("wrong");
+              //new line
+              options.forEach((option) => {
+                if (
+                  option.textContent.trim().toLocaleLowerCase() ==
+                  data.answer.trim().toLocaleLowerCase()
+                ) {
+                  option.style.backgroundColor = "green";
+                  option.style.color = "white";
+                }
+              });
+              //-----------
             }
           })
           .catch((error) => {
